@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIP Sarl - Suivi des Dépôts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="home">
+        <h1>AIP Sarl</h1>
+        <div class="group-links">
+            <a href="#groupe1" onclick="showGroup('Groupe 1')">Voir Groupe 1</a>
+            <a href="#groupe2" onclick="showGroup('Groupe 2')">Voir Groupe 2</a>
+            <a href="#groupe3" onclick="showGroup('Groupe 3')">Voir Groupe 3</a>
+        </div>
+    </div>
+
+    <div class="container" id="groupes" style="display: none;">
+        <h1 id="groupe-title">Groupe</h1>
+        <div class="form-group">
+            <label for="groupe">Groupe :</label>
+            <select id="groupe" onchange="changeGroup()">
+                <option value="Groupe 1">Groupe 1</option>
+                <option value="Groupe 2">Groupe 2</option>
+                <option value="Groupe 3">Groupe 3</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="nomClient">Nom du client :</label>
+            <input type="text" id="nomClient" required>
+        </div>
+        <div class="form-group">
+            <label for="telephone">Numéro de téléphone :</label>
+            <input type="text" id="telephone" required>
+        </div>
+        <div class="form-group">
+            <label for="quartier">Quartier :</label>
+            <input type="text" id="quartier" required>
+        </div>
+        <div class="form-group">
+            <label for="observation">Observation :</label>
+            <textarea id="observation"></textarea>
+        </div>
+        <div class="form-group">
+            <button onclick="ajouterDepot()">Ajouter un dépôt</button>
+        </div>
+        <div class="menu">
+            <button onclick="afficherDepots('Groupe 1')">Voir Groupe 1</button>
+            <button onclick="afficherDepots('Groupe 2')">Voir Groupe 2</button>
+            <button onclick="afficherDepots('Groupe 3')">Voir Groupe 3</button>
+        </div>
+        <div class="stats">
+            <h2>Statistiques</h2>
+            <p id="totalDepots">Total des dépôts enregistrés : 0</p>
+            <canvas id="chartQuartier" width="400" height="200"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

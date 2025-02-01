@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('votre_image_de_fond.jpg');
+    background-size: cover;
+    color: white;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+h1 {
+    color: blue;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.group-links a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.group-links a:hover {
+    background-color: #0056b3;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+}
+.form-group button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.form-group button:hover {
+    background-color: #0056b3;
+}
+.stats {
+    margin-top: 20px;
+}
+canvas {
+    background-color: white;
+    border-radius: 10px;
+}
+.menu {
+    margin-top: 20px;
+}
+.menu button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.menu button:hover {
+    background-color: #218838;
+}
